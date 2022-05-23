@@ -4,10 +4,8 @@ import { GA_TRACKING_ID } from "../lib/gtag";
 export default class MyDocument extends NextDocument {
   render() {
     return (
-      <Html lang="en">
+      <>
         {/* other code */}
-
-        <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
@@ -25,10 +23,7 @@ export default class MyDocument extends NextDocument {
           `,
             }}
           />
-        </Head>
-
-        {/* Other code */}
-      </Html>
+       </>
     );
   }
 }
